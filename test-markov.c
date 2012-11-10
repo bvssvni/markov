@@ -17,8 +17,9 @@ void test_markov_1(void)
 		1,1,1,1
 	};
 	
-	double prob[states << 1];
-	memset(prob, 0, (states << 1) * sizeof(double));
+	int st2 = states * states;
+	double prob[st2];
+	memset(prob, 0, st2 * sizeof(double));
 	
 	int freq[states];
 	memset(freq, 0, states * sizeof(int));
@@ -45,8 +46,9 @@ void test_markov_2(void)
 		1,1,0,0
 	};
 	
-	double prob[states << 1];
-	memset(prob, 0, (states << 1) * sizeof(double));
+	int st2 = states * states;
+	double prob[st2];
+	memset(prob, 0, st2 * sizeof(double));
 	
 	int freq[states];
 	memset(freq, 0, states * sizeof(int));
@@ -74,8 +76,9 @@ void test_markov_3(void)
 		1,1,0,0
 	};
 	
-	double prob[states << 1];
-	memset(prob, 0, (states << 1) * sizeof(double));
+	int st2 = states * states;
+	double prob[st2];
+	memset(prob, 0, st2 * sizeof(double));
 	
 	int freq[states];
 	memset(freq, 0, states * sizeof(int));
